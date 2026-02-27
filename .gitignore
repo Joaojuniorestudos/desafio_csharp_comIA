@@ -1,0 +1,51 @@
+# Logs gerais
+*.log
+*.log.*
+logs/
+
+# Logs do Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Logs e arquivos de sistema do macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Logs e arquivos de sistema do Linux
+*~
+.Trash-*
+.nfs*
+
+# Logs e artefatos do .NET
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+*.user
+*.suo
+*.userprefs
+*.svclog
+*.pidb
+TestResult*/
+TestResults/
+.vs/
+*.dbmdl
+*.opendb
+*.mdb
+*.ldf
+*.ndf
+*.log.ldf
+
+# Outras pastas comuns de build/output
+dist/
+out/
+
