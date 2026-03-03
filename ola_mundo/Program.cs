@@ -1,14 +1,29 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Essa saudação");
-Console.WriteLine("Olá, Mundo!");
-string nome = "João"
-int idade = 42; 
-double altura = 1.75;
 
+
+// declaração de variáveis estaticas
+string nome = "João";
+int idade = 42; 
+
+// declaração de variáveis dinamicas
 var idade2 = 42;
 var nome2 = "João";
 
-/*Aqui em notas tem vário dados sobre os escritos:
+// conversões de tipo de dados
+string resultado = Convert.ToString(idade) + " -- " + nome;
+string resultado2 = idade2.ToString() + " -- " + nome2;
+int resultado3 = int.Parse("2") + idade; // fortemente tipado, precisa fazer a conversão para o tipo de dados
+
+Console.WriteLine(resultado);
+Console.WriteLine(resultado2);
+Console.WriteLine(resultado3);
+
+Console.WriteLine("Digte seu nome: ");
+nome = Console.ReadLine() ?? "Nome não informado";
+Console.WriteLine("Seu nome é: " + nome);
+// Console.WriteLine($"Seu nome é: {nome}");
+/*  
+Aqui em notas tem vário dados sobre os escritos:
 
 ## Conversão de tipo de dados:
 
@@ -45,4 +60,29 @@ Por exemplo ele iria apontar um erro no comando :
 
 - snake_case // para nome de arquivos
 `string usuario_com_dados_anonimos`
+
+
+// primeiro exercício aula 4
+string nome = "Reinaldo";
+int idade = 21;
+var resultado = "Nome: " + nome + ", Idade: " + Convert.ToString(idade);
+Console.WriteLine("------------------------------------");
+Console.WriteLine(resultado);
+Console.WriteLine("------------------------------------");
+
+var segundoNome = "João";
+var segundaIdade = 21;
+
+Console.WriteLine("------------------------------------");
+Console.WriteLine($"Nome: {segundoNome}, Idade: {segundaIdade}");
+Console.WriteLine("------------------------------------");
+
+Console.WriteLine("Digite um novo número: ");
+var stringNumero = Console.ReadLine() ?? "0";
+
+Console.WriteLine("------------------------------------");
+Console.WriteLine($"O número digitado foi: {stringNumero}");
+var idadeNova = idade + int.Parse(stringNumero);
+Console.WriteLine($"A soma dos números é: {idadeNova}");
+Console.WriteLine("------------------------------------");
 */
