@@ -65,6 +65,8 @@ Console.WriteLine(resultado4);
 
 
 // ============== Validando entrada de usuário ==============
+// ele usa o int.TryParse(valor_a_verificar, out int valor_de_saída)
+
 Console.WriteLine("Digite sua idade: ");
 string entrada5 = Console.ReadLine();
 
