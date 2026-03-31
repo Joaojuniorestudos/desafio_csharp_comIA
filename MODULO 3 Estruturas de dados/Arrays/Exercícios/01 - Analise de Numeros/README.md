@@ -1,50 +1,18 @@
-# Exercício 01: Análise de números
+# Exercício 01 — Análise de Números com Array
 
-## O que você vai praticar
+## Cenário real
 
-- Declarar e preencher um **`int[]`**
-- Laços (`for`) para percorrer o array
-- Cálculos: **soma**, **média**, **maior** e **menor** valor
-- (Desafio extra) Contar quantos números são **pares** e quantos são **ímpares**
+Você está criando um pequeno módulo de estatísticas para analisar uma lista de números inteiros digitados pelo usuário.
 
-## Cenário
+## Objetivo
 
-Você precisa de um programa que leia vários números inteiros, guarde em um array e mostre um resumo estatístico simples (útil para análise rápida de uma lista de valores).
+Criar um programa em C# que:
 
-## Enunciado
-
-1. Peça ao usuário quantos números serão informados (**N**, inteiro positivo).
-2. Crie um **`int[]`** com tamanho **N**.
-3. Em um laço, leia cada número (validando com **`int.TryParse`** quando fizer sentido) e armazene no array.
-4. Calcule e exiba:
-   - **soma** de todos os elementos;
-   - **média** (soma ÷ N);
-   - **maior** valor;
-   - **menor** valor.
-
-## Desafio extra
-
-- Conte quantos números são **pares** e quantos são **ímpares** e exiba esses totais.
-
-## Exemplo de saída
-
-```
-Quantos números? 4
-Número 1: 10
-Número 2: 5
-Número 3: 8
-Número 4: 3
-Soma: 26 | Média: 6,5 | Maior: 10 | Menor: 3
-Pares: 2 | Ímpares: 2
-```
-
-## Dica
-
-Inicialize `maior` e `menor` com o primeiro elemento do array depois de preenchê-lo, ou use `int.MinValue` / `int.MaxValue` com cuidado na lógica.
+1. Leia do usuário a **quantidade** de números que ele quer analisar (por exemplo, 5 ou 10).
+2. Crie um `int[]` com esse tamanho.
+3. Preencha o array lendo os números digitados pelo usuário.
 
 ## Como executar
-
-Crie um projeto console na pasta deste exercício (ou use um projeto existente) e execute:
 
 ```bash
 dotnet run
